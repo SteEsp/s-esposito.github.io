@@ -4,17 +4,17 @@ def get_personal_data():
     name = ["Stefano", "Esposito"]
     email = "stefano.esposito97@outlook.com"
     twitter = "StefanoEsp"
-    github = "SteEsp"
+    github = "s-esposito"
     linkedin = "stefanoesposito97"
     bio_text = f"""
                 <p>I am a PhD student at the University of Tübingen on 3D computer vision and graphics.</p>
-                <!-- <p>
+                <p>
                     <span style="font-weight: bold;">Research:</span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p> -->
+                    I am particularly interested in 3D computer vision topics leveraging coordinate-based neural networks (neural fields). Such methods parameterize the physical properties of scenes or objects in space and time, and have been successfully applied to problems such as novel view synthesis, 3D reconstruction, pose estimation and animations.
+                </p>
                 <p>
                     <span style="font-weight: bold;">Bio:</span> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    I have a bachelor's degree in computer science and a master's degree in "artificial intelligence and robotics". I see myself as an educated programmer and a true technology enthusiast; in my spare time I enjoy learning new things, traveling, and keeping up to date with what is happening in the world. I love connecting with nature by hiking in the mountains. 
                 </p>
                 <p>For any inquiries, feel free to reach out to me via mail!</p>
                 <p>
@@ -22,7 +22,7 @@ def get_personal_data():
                     <a href="mailto:stefano.esposito97@outlook.com" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
                     <a href="https://twitter.com/StefanoEsp" target="_blank" style="margin-right: 15px"><i class="fab fa-twitter fa-lg"></i> Twitter</a>
                     <a href="https://scholar.google.com/citations?user=5RhJ-eEAAAAJ&hl=it" target="_blank" style="margin-right: 15px"><i class="fa-solid fa-book"></i> Scholar</a>
-                    <a href="https://github.com/SteEsp" target="_blank" style="margin-right: 15px"><i class="fab fa-github fa-lg"></i> Github</a>
+                    <a href="https://github.com/s-esposito" target="_blank" style="margin-right: 15px"><i class="fab fa-github fa-lg"></i> Github</a>
                     <a href="https://www.linkedin.com/in/stefanoesposito97" target="_blank" style="margin-right: 15px"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
                 </p>
     """
@@ -71,6 +71,7 @@ def get_author_dict():
         'Stefan Zellmann': 'https://www.szellmann.de/',
         'André Hinkenjann': 'https://www.h-brs.de/en/inf/prof-dr-andre-hinkenjann',
         'Emanuele Rodola': 'https://gladia.di.uniroma1.it/authors/rodola/',
+        'Filippo Maggioli': 'https://gladia.di.uniroma1.it/authors/maggioli/',
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Michael Niemeyer', add_links=True):
