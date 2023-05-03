@@ -66,7 +66,11 @@ def get_author_dict():
         'Anpei Chen': 'https://apchenstu.github.io/',
         'Bozidar Antic': 'https://bozidarantic.com/',
         'Apratim Bhattacharyya': 'https://apratimbhattacharyya18.github.io/',
-        'Siyu Tang': 'https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html'
+        'Siyu Tang': 'https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html',
+        'Daniele Baieri': 'https://gladia.di.uniroma1.it/authors/baieri/',
+        'Stefan Zellmann': 'https://www.szellmann.de/',
+        'André Hinkenjann': 'https://www.h-brs.de/en/inf/prof-dr-andre-hinkenjann',
+        'Emanuele Rodola': 'https://gladia.di.uniroma1.it/authors/rodola/',
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Michael Niemeyer', add_links=True):
