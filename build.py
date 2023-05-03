@@ -70,7 +70,7 @@ def get_author_dict():
         'Daniele Baieri': 'https://gladia.di.uniroma1.it/authors/baieri/',
         'Stefan Zellmann': 'https://www.szellmann.de/',
         'André Hinkenjann': 'https://www.h-brs.de/en/inf/prof-dr-andre-hinkenjann',
-        'Emanuele Rodola': 'https://gladia.di.uniroma1.it/authors/rodola/',
+        'Emanuele Rodolà': 'https://gladia.di.uniroma1.it/authors/rodola/',
         'Filippo Maggioli': 'https://gladia.di.uniroma1.it/authors/maggioli/',
         }
 
