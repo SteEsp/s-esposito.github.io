@@ -94,7 +94,7 @@ def generate_person_html(persons, connection=", ", make_bold=True, make_bold_nam
 
 def get_paper_entry(entry_key, entry):
     s = """<div style="margin-bottom: 3em;"> <div class="row"><div class="col-sm-3">"""
-    s += f"""<img src="{entry.fields['img']}" class="img-fluid img-thumbnail" alt="Project image">"""
+    s += f"""<img src="{entry.fields['img']}" class="img-fluid custom-img-thumbnail" alt="Project image">"""
     s += """</div><div class="col-sm-9">"""
 
     if 'award' in entry.fields.keys():
@@ -127,7 +127,7 @@ def get_paper_entry(entry_key, entry):
 
 def get_talk_entry(entry_key, entry):
     s = """<div style="margin-bottom: 3em;"> <div class="row"><div class="col-sm-3">"""
-    s += f"""<img src="{entry.fields['img']}" class="img-fluid img-thumbnail" alt="Project image">"""
+    s += f"""<img src="{entry.fields['img']}" class="img-fluid custom-img-thumbnail" alt="Project image">"""
     s += """</div><div class="col-sm-9">"""
     s += f"""{entry.fields['title']}<br>"""
     s += f"""<span style="font-style: italic;">{entry.fields['booktitle']}</span>, {entry.fields['year']} <br>"""
@@ -181,6 +181,9 @@ def get_index_html():
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">  
+
   <title>{name[0] + ' ' + name[1]}</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
@@ -188,7 +191,7 @@ def get_index_html():
 <body>
     <div class="container">
         <div class="row" style="margin-top: 3em;">
-            <div class="col-sm-12" style="margin-bottom: 1em;">
+            <div class="col-sm-12" style="margin-bottom: 2em;">
             <h3 class="display-4" style="text-align: center;"><span style="font-weight: bold;">{name[0]}</span> {name[1]}</h3>
             </div>
             <br>
@@ -196,21 +199,23 @@ def get_index_html():
                 {bio_text}
             </div>
             <div class="col-md-4" style="">
-                <img src="assets/img/profile.jpg" class="img-thumbnail" width="280px" alt="Profile picture">
+                <img src="assets/img/profile.jpg" class="custom-img-thumbnail" width="280px" alt="Profile picture">
             </div>
         </div>
-        <div class="row" style="margin-top: 1em;">
+        <div class="row" style="margin-top: 2em;">
             <div class="col-sm-12" style="">
                 <h4>Publications</h4>
                 {pub}
             </div>
         </div>
+        <--
         <div class="row" style="margin-top: 3em;">
             <div class="col-sm-12" style="">
                 <h4>Talks</h4>
                 {talks}
             </div>
         </div>
+        -->
         <div class="row" style="margin-top: 3em; margin-bottom: 1em;">
             {footer}
         </div>
@@ -236,7 +241,7 @@ def get_index_html():
 
 def write_index_html(filename='index.html'):
     s = get_index_html()
-    with open(filename, 'w') as f:
+    with open(filename, 'w', encoding='utf-8') as f:
         f.write(s)
     print(f'Written index content to {filename}.')
 
