@@ -76,6 +76,9 @@ def get_author_dict():
         'Christian Richardt': 'https://richardt.name/', 
         'Michael Zollhoefer': 'https://zollhoefer.com/',
         'Peter Kontschieder': 'https://scholar.google.co.uk/citations?user=CxbDDRMAAAAJ&hl=en',
+        'Haofei Xu': 'https://haofeixu.github.io/',
+        'Siyu Tang': 'https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html',
+        'Donato Crisostomi': 'https://crisostomi.com/'
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Michael Niemeyer', add_links=True):
