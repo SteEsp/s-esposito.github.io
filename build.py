@@ -72,6 +72,10 @@ def get_author_dict():
         'André Hinkenjann': 'https://www.h-brs.de/en/inf/prof-dr-andre-hinkenjann',
         'Emanuele Rodolà': 'https://gladia.di.uniroma1.it/authors/rodola/',
         'Filippo Maggioli': 'https://gladia.di.uniroma1.it/authors/maggioli/',
+        'Samuel Rota Bulò': 'https://scholar.google.com/citations?user=484sccEAAAAJ&hl=it', 
+        'Christian Richardt': 'https://richardt.name/', 
+        'Michael Zollhoefer': 'https://zollhoefer.com/',
+        'Peter Kontschieder': 'https://scholar.google.co.uk/citations?user=CxbDDRMAAAAJ&hl=en',
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Michael Niemeyer', add_links=True):
