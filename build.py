@@ -73,6 +73,7 @@ def get_author_dict():
         'Emanuele Rodolà': 'https://gladia.di.uniroma1.it/authors/rodola/',
         'Filippo Maggioli': 'https://gladia.di.uniroma1.it/authors/maggioli/',
         'Samuel Rota Bulò': 'https://scholar.google.com/citations?user=484sccEAAAAJ&hl=it', 
+        'Lorenzo Porzi': 'https://scholar.google.it/citations?user=vW1gaVEAAAAJ&hl=it',
         'Christian Richardt': 'https://richardt.name/', 
         'Michael Zollhoefer': 'https://zollhoefer.com/',
         'Peter Kontschieder': 'https://scholar.google.co.uk/citations?user=CxbDDRMAAAAJ&hl=en',
